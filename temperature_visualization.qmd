@@ -1,0 +1,58 @@
+```{python}
+import pandas as pd
+import altair as alt
+
+df = pd.read_excel("cmip6-x0.25_timeseries_hi39_timeseries_annual_1950-2014_median_historical_ensemble_all_mean.xlsx")
+
+df = df.drop(columns=['code'])
+
+df = df.rename(columns={'name': 'Country'})
+countries = df['Country'].unique()
+
+df.head()
+
+df_long = df.melt(
+    id_vars=['Country'],
+    var_name='Year',
+    value_name='Metric'
+)
+
+country_select = alt.selection_point(
+    name='Country', 
+    fields=['Country'],
+    bind=alt.binding_radio(options=countries, name='Country: '),
+    value=countries[0]
+)
+
+
+chart = alt.Chart(df_long).mark_line().encode(
+    x=alt.X('Year', axis=alt.Axis(title='Year')),
+    y=alt.Y('Metric', axis=alt.Axis(title='Metric')),
+    color='Country:N',
+    tooltip=['Country', 'Year', 'Metric']
+).properties(
+    title='Days With Extreme Temperatures'
+)
+
+
+chart = chart.add_params(
+    country_select
+).transform_filter(
+    country_select
+).interactive()
+
+chart.save('extreme_temperature_plot.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
