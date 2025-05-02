@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "DSAN Final Project"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Introduction"
+        href: pages/Introduction.qmd
+
+format:
+  html:
+    theme: cosmo
+    highlight-style: github

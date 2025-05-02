@@ -1,0 +1,81 @@
+.timeline-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-svg {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  background-color: transparent;
+}
+
+.timeline-tooltip {
+  position: absolute;
+  max-width: 300px;
+  font-size: 12px;
+  line-height: 1.4;
+  border-radius: 4px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+/* Enhance visibility of chart elements */
+.line-group {
+  transition: opacity 0.3s, stroke-width 0.3s;
+}
+
+.line-group:hover {
+  opacity: 1 !important;
+}
+
+.dot {
+  transition: opacity 0.3s, r 0.3s;
+}
+
+.dot:hover {
+  opacity: 1 !important;
+}
+
+/* Improved axis styling */
+.timeline-svg text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+}
+
+.timeline-svg .tick line {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.timeline-svg path.domain {
+  stroke-width: 1.5;
+}
+
+/* Style for selected items */
+.timeline-container .selected {
+  stroke-width: 5px !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode adjustments - will be applied when the parent theme is dark */
+@media (prefers-color-scheme: dark) {
+  .timeline-svg .tick line {
+    stroke: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Improve responsiveness */
+@media screen and (max-width: 600px) {
+  .timeline-tooltip {
+    max-width: 240px;
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  
+  .timeline-svg text {
+    font-size: 0.65rem;
+  }
+}

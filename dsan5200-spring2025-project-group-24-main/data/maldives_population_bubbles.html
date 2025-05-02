@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ed67b3d4a51a010c25d3af348da25bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ed67b3d4a51a010c25d3af348da25bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ed67b3d4a51a010c25d3af348da25bf = L.map(
+                "map_0ed67b3d4a51a010c25d3af348da25bf",
+                {
+                    center: [3.8, 73.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5640d1bd44fa6f996988a3bf375efa1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_b5640d1bd44fa6f996988a3bf375efa1.addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+            var circle_marker_984f2408820819b26a17aaaefd713dd3 = L.circleMarker(
+                [4.1753, 73.5089],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6471769904955256, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_4555ce96985d7bc1cfe5b2317fc7c442 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2ee6bc9383f9cd8da761b640a7957ae = $(`<div id="html_d2ee6bc9383f9cd8da761b640a7957ae" style="width: 100.0%; height: 100.0%;">City: Male  Population: 133019</div>`)[0];
+                popup_4555ce96985d7bc1cfe5b2317fc7c442.setContent(html_d2ee6bc9383f9cd8da761b640a7957ae);
+            
+        
+
+        circle_marker_984f2408820819b26a17aaaefd713dd3.bindPopup(popup_4555ce96985d7bc1cfe5b2317fc7c442)
+        ;
+
+        
+    
+    
+            var circle_marker_817a1d566c61750131c300c8933f13d8 = L.circleMarker(
+                [6.6225, 73.0703],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_82a5e8261943585bab35f053f4aab4f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8ad4af2e2b6d8cd4e10f4b0d1fba3db = $(`<div id="html_c8ad4af2e2b6d8cd4e10f4b0d1fba3db" style="width: 100.0%; height: 100.0%;">City: Kulhudhuffushi  Population: 15875</div>`)[0];
+                popup_82a5e8261943585bab35f053f4aab4f6.setContent(html_c8ad4af2e2b6d8cd4e10f4b0d1fba3db);
+            
+        
+
+        circle_marker_817a1d566c61750131c300c8933f13d8.bindPopup(popup_82a5e8261943585bab35f053f4aab4f6)
+        ;
+
+        
+    
+    
+            var circle_marker_a1868a33cadecb6efd2d7b3087080ec7 = L.circleMarker(
+                [-0.6094, 73.0899],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_606de1afa56cd00628d0f94f35340fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696be4684c65fd2af5e03141d4f81b2f = $(`<div id="html_696be4684c65fd2af5e03141d4f81b2f" style="width: 100.0%; height: 100.0%;">City: Hithadhoo  Population: 10398</div>`)[0];
+                popup_606de1afa56cd00628d0f94f35340fbd.setContent(html_696be4684c65fd2af5e03141d4f81b2f);
+            
+        
+
+        circle_marker_a1868a33cadecb6efd2d7b3087080ec7.bindPopup(popup_606de1afa56cd00628d0f94f35340fbd)
+        ;
+
+        
+    
+    
+            var circle_marker_97d4053cc23f35d0f374a40b085eaca2 = L.circleMarker(
+                [-0.2932, 73.4236],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_ceecf651f8016a3594e7e7b87d95a504 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a0ce93e93640bc9332e18bddc639798 = $(`<div id="html_8a0ce93e93640bc9332e18bddc639798" style="width: 100.0%; height: 100.0%;">City: Foammulah  Population: 9166</div>`)[0];
+                popup_ceecf651f8016a3594e7e7b87d95a504.setContent(html_8a0ce93e93640bc9332e18bddc639798);
+            
+        
+
+        circle_marker_97d4053cc23f35d0f374a40b085eaca2.bindPopup(popup_ceecf651f8016a3594e7e7b87d95a504)
+        ;
+
+        
+    
+    
+            var circle_marker_3809e4a3e945639bab5d94dc004748ef = L.circleMarker(
+                [0.5302, 72.9965],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_bdbbda82c0a294ea6520ee6315118ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16e1828de02b4ff6d620d990f85b7a06 = $(`<div id="html_16e1828de02b4ff6d620d990f85b7a06" style="width: 100.0%; height: 100.0%;">City: Thinadhoo  Population: 5230</div>`)[0];
+                popup_bdbbda82c0a294ea6520ee6315118ea8.setContent(html_16e1828de02b4ff6d620d990f85b7a06);
+            
+        
+
+        circle_marker_3809e4a3e945639bab5d94dc004748ef.bindPopup(popup_bdbbda82c0a294ea6520ee6315118ea8)
+        ;
+
+        
+    
+    
+            var circle_marker_ef93f7e3b10a2fbd729502ad37de7fb7 = L.circleMarker(
+                [5.4444, 73.3657],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_6881a74de748227f78ef15d8dae81420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c5b5b3e28e98d864830522ba0a15f3e = $(`<div id="html_4c5b5b3e28e98d864830522ba0a15f3e" style="width: 100.0%; height: 100.0%;">City: Naifaru  Population: 4103</div>`)[0];
+                popup_6881a74de748227f78ef15d8dae81420.setContent(html_4c5b5b3e28e98d864830522ba0a15f3e);
+            
+        
+
+        circle_marker_ef93f7e3b10a2fbd729502ad37de7fb7.bindPopup(popup_6881a74de748227f78ef15d8dae81420)
+        ;
+
+        
+    
+    
+            var circle_marker_68481bd8401125f3f2b840ccbf310971 = L.circleMarker(
+                [2.6711, 72.8935],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_57339d7daef33d09d9324e5b183e4292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02c19459a8eddccfa7946e55dfff513f = $(`<div id="html_02c19459a8eddccfa7946e55dfff513f" style="width: 100.0%; height: 100.0%;">City: Kudahuvadhoo  Population: 3132</div>`)[0];
+                popup_57339d7daef33d09d9324e5b183e4292.setContent(html_02c19459a8eddccfa7946e55dfff513f);
+            
+        
+
+        circle_marker_68481bd8401125f3f2b840ccbf310971.bindPopup(popup_57339d7daef33d09d9324e5b183e4292)
+        ;
+
+        
+    
+    
+            var circle_marker_5ca2c8941fc33fc0619e329f6c4f019a = L.circleMarker(
+                [3.7575, 72.9686],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_58aee6622c21ea896826cfb1d7b86f95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3862f4d6bd06867a98f36d04cd5ed25 = $(`<div id="html_a3862f4d6bd06867a98f36d04cd5ed25" style="width: 100.0%; height: 100.0%;">City: Mahibadhoo  Population: 3000</div>`)[0];
+                popup_58aee6622c21ea896826cfb1d7b86f95.setContent(html_a3862f4d6bd06867a98f36d04cd5ed25);
+            
+        
+
+        circle_marker_5ca2c8941fc33fc0619e329f6c4f019a.bindPopup(popup_58aee6622c21ea896826cfb1d7b86f95)
+        ;
+
+        
+    
+    
+            var circle_marker_99228d5e9486a1261fc38e52089f7c64 = L.circleMarker(
+                [0.7569, 73.4361],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_e20499deaf2e6619cf4fed4778d9050d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32af46d941e45f61a15cc0ab31ddd5b4 = $(`<div id="html_32af46d941e45f61a15cc0ab31ddd5b4" style="width: 100.0%; height: 100.0%;">City: Viligili  Population: 2837</div>`)[0];
+                popup_e20499deaf2e6619cf4fed4778d9050d.setContent(html_32af46d941e45f61a15cc0ab31ddd5b4);
+            
+        
+
+        circle_marker_99228d5e9486a1261fc38e52089f7c64.bindPopup(popup_e20499deaf2e6619cf4fed4778d9050d)
+        ;
+
+        
+    
+    
+            var circle_marker_3a84803694c115109586ba4248f82f53 = L.circleMarker(
+                [5.1038, 73.0704],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_5d690c8c3aa69d1bab679f42c1458a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a364a76b5d8ef26f6847d71c3fc887c0 = $(`<div id="html_a364a76b5d8ef26f6847d71c3fc887c0" style="width: 100.0%; height: 100.0%;">City: Eydhafushi  Population: 2658</div>`)[0];
+                popup_5d690c8c3aa69d1bab679f42c1458a15.setContent(html_a364a76b5d8ef26f6847d71c3fc887c0);
+            
+        
+
+        circle_marker_3a84803694c115109586ba4248f82f53.bindPopup(popup_5d690c8c3aa69d1bab679f42c1458a15)
+        ;
+
+        
+    
+    
+            var circle_marker_70930950e9d43e90a607aa8222c41294 = L.circleMarker(
+                [6.1482, 73.29],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_b99eee7722bb6feef71f95360eea8a18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91edd1f4dd9bee006fed7c402a5ebb77 = $(`<div id="html_91edd1f4dd9bee006fed7c402a5ebb77" style="width: 100.0%; height: 100.0%;">City: Funadhoo  Population: 2104</div>`)[0];
+                popup_b99eee7722bb6feef71f95360eea8a18.setContent(html_91edd1f4dd9bee006fed7c402a5ebb77);
+            
+        
+
+        circle_marker_70930950e9d43e90a607aa8222c41294.bindPopup(popup_b99eee7722bb6feef71f95360eea8a18)
+        ;
+
+        
+    
+    
+            var circle_marker_6c5cfa2aaada17a376f04dce837496f4 = L.circleMarker(
+                [5.7628, 73.4106],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_e9120cdc3fb6e09ad3e7c216f8097eef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbd0a72933a9ac1b0ab79fb88d2f7807 = $(`<div id="html_fbd0a72933a9ac1b0ab79fb88d2f7807" style="width: 100.0%; height: 100.0%;">City: Manadhoo  Population: 2041</div>`)[0];
+                popup_e9120cdc3fb6e09ad3e7c216f8097eef.setContent(html_fbd0a72933a9ac1b0ab79fb88d2f7807);
+            
+        
+
+        circle_marker_6c5cfa2aaada17a376f04dce837496f4.bindPopup(popup_e9120cdc3fb6e09ad3e7c216f8097eef)
+        ;
+
+        
+    
+    
+            var circle_marker_82d7de0cb4c79a0a4e0f53d8d1bf79b9 = L.circleMarker(
+                [5.6681, 73.0306],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_da53b1520fc272360e1b9339aacbd987 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb6bc3d77803a4f8aaee596ccd9b3cb = $(`<div id="html_8bb6bc3d77803a4f8aaee596ccd9b3cb" style="width: 100.0%; height: 100.0%;">City: Ungoofaaru  Population: 1531</div>`)[0];
+                popup_da53b1520fc272360e1b9339aacbd987.setContent(html_8bb6bc3d77803a4f8aaee596ccd9b3cb);
+            
+        
+
+        circle_marker_82d7de0cb4c79a0a4e0f53d8d1bf79b9.bindPopup(popup_da53b1520fc272360e1b9339aacbd987)
+        ;
+
+        
+    
+    
+            var circle_marker_c74dc3148da521287291ee40d4c4ddaa = L.circleMarker(
+                [2.1881, 73.0947],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_c423c540035d5597096748821e99f3d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e56f87c5dafe093741cb1e058e09a61a = $(`<div id="html_e56f87c5dafe093741cb1e058e09a61a" style="width: 100.0%; height: 100.0%;">City: Veymandoo  Population: 1321</div>`)[0];
+                popup_c423c540035d5597096748821e99f3d1.setContent(html_e56f87c5dafe093741cb1e058e09a61a);
+            
+        
+
+        circle_marker_c74dc3148da521287291ee40d4c4ddaa.bindPopup(popup_c423c540035d5597096748821e99f3d1)
+        ;
+
+        
+    
+    
+            var circle_marker_0994ec83d2ddeab518e20a40676648b1 = L.circleMarker(
+                [3.0778, 72.9653],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_97f3f4ee3baa995da045e9c390ef7e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e11dc572c14b41a4135828d37a08e6d5 = $(`<div id="html_e11dc572c14b41a4135828d37a08e6d5" style="width: 100.0%; height: 100.0%;">City: Magoodhoo  Population: 794</div>`)[0];
+                popup_97f3f4ee3baa995da045e9c390ef7e88.setContent(html_e11dc572c14b41a4135828d37a08e6d5);
+            
+        
+
+        circle_marker_0994ec83d2ddeab518e20a40676648b1.bindPopup(popup_97f3f4ee3baa995da045e9c390ef7e88)
+        ;
+
+        
+    
+    
+            var circle_marker_ba03eceeca6a083076e0d439d3466621 = L.circleMarker(
+                [3.4717, 73.5472],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_0ed67b3d4a51a010c25d3af348da25bf);
+        
+    
+        var popup_0e7fbb6bad7bc48d30396e0890f8d301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d85c197eca89daaf10b8920fb7838829 = $(`<div id="html_d85c197eca89daaf10b8920fb7838829" style="width: 100.0%; height: 100.0%;">City: Felidhoo  Population: 506</div>`)[0];
+                popup_0e7fbb6bad7bc48d30396e0890f8d301.setContent(html_d85c197eca89daaf10b8920fb7838829);
+            
+        
+
+        circle_marker_ba03eceeca6a083076e0d439d3466621.bindPopup(popup_0e7fbb6bad7bc48d30396e0890f8d301)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,296 @@
+[
+  {
+    "src": "/images/EDA_imgs/actor_type_changes_over_time.png",
+    "title": "Actor Type Changes Over Time",
+    "description": "Stacked bar chart tracking the evolution of incident counts by actor type from 1999 to 2020, showing shifts in dominant perpetrators.",
+    "type": "stacked bar chart",
+    "category": "Temporal Trends"
+  },
+  {
+    "src": "/images/EDA_imgs/actor_type_incident_severity_over_time.png",
+    "title": "Incident Severity by Actor Type Over Time",
+    "description": "Line chart comparing severity (killed*3 + wounded*2 + kidnapped) by actor type across years (1999–2020).",
+    "type": "line chart",
+    "category": "Severity Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/actor_type_motive.png",
+    "title": "Actor Type vs. Motive",
+    "description": "Heatmap showing frequency of incidents by actor-motive combinations, with darker cells indicating higher frequency.",
+    "type": "heatmap",
+    "category": "Motivational Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/actor_types_holiday_incidents.png",
+    "title": "Top Actor Types in Holiday Incidents",
+    "description": "Bar chart ranking actor types by involvement in holiday-linked incidents, dominated by unknown actors.",
+    "type": "horizontal bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/chi_sq_religious_holidays_religous_political_motives.png",
+    "title": "Chi-Squared Test: Holidays vs. Motives",
+    "description": "Statistical output (X²=639.82, p<0.001) showing significant association between religious/political motives and holidays.",
+    "type": "statistical output",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/chi_squared_residuals_country.png",
+    "title": "Chi-Squared Residuals by Country",
+    "description": "Table identifying countries with significant deviations in holiday-linked incidents (e.g., Afghanistan residual=20.7).",
+    "type": "statistical table",
+    "category": "Country Comparison"
+  },
+  {
+    "src": "/images/EDA_imgs/clustered_incident_types.png",
+    "title": "Clustered Incident Types",
+    "description": "Scatterplot grouping incidents by casualty counts (killed 40-60, wounded 0-20) into 4 distinct clusters.",
+    "type": "scatterplot",
+    "category": "Severity Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/cumulative_death_over_time.png",
+    "title": "Cumulative Death Toll (2000–2020)",
+    "description": "Line chart showing exponential rise in fatalities (0-2000), highlighting escalation points in conflicts.",
+    "type": "line chart",
+    "category": "Temporal Trends"
+  },
+  {
+    "src": "/images/EDA_imgs/death_over_time_top_10_regions.png",
+    "title": "Cumulative Deaths by Region (Top 10)",
+    "description": "Stacked area chart of fatalities (0-200) in high-risk regions (e.g., Aleppo, North Kivu) from 2000–2020.",
+    "type": "stacked area chart",
+    "category": "Regional Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/granual_geographic_dist_incidents_.png",
+    "title": "Geographic Incident Distribution",
+    "description": "Heatmap of global incident density with hotspots in Sub-Saharan Africa, Middle East, and South Asia.",
+    "type": "map",
+    "category": "Geographic Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/holiday_incidents_top_countries.png",
+    "title": "Holiday-Linked Incidents by Country",
+    "description": "Stacked bar chart showing % of incidents on/near holidays for top 10 countries (Syria/Sudan highest).",
+    "type": "stacked bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/humanitarian_orgs_incident_severity.png",
+    "title": "Humanitarian Orgs vs. Incident Severity",
+    "description": "Scatterplot showing positive correlation between orgs present (5-15) and severity (10-40).",
+    "type": "scatterplot",
+    "category": "Actor Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_frequency_actor_type.png",
+    "title": "Incident Frequency Around Events (by Actor)",
+    "description": "Multi-line chart of incident spikes ±30 days post-events by actor type (host states, armed groups).",
+    "type": "multi-line chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_frequency_major_events.png",
+    "title": "Incident Frequency Around Major Events",
+    "description": "Line chart showing increased incidents immediately after major events (±30 days).",
+    "type": "line chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_frequency_region.png",
+    "title": "Incident Frequency Around Events (by Region)",
+    "description": "Multi-line chart of incident spikes in volatile regions (e.g., Kunduz, Afghanistan) post-events.",
+    "type": "multi-line chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_severity_actor_type.png",
+    "title": "Incident Severity by Actor Type",
+    "description": "Bar chart showing highest severity for unknown actors, regional armed groups, and coalition forces.",
+    "type": "bar chart",
+    "category": "Actor Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_severity_attack_context.png",
+    "title": "Severity by Attack Context",
+    "description": "Bar chart ranking combat/crossfire, raids, and ambushes as most severe contexts.",
+    "type": "bar chart",
+    "category": "Context Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_severity_means_of_attack.png",
+    "title": "Severity by Attack Method",
+    "description": "Bar chart identifying aerial bombardments, vehicle-borne IEDs, and shootings as most severe.",
+    "type": "bar chart",
+    "category": "Attack Methods"
+  },
+  {
+    "src": "/images/EDA_imgs/incident_severity_month.png",
+    "title": "Incident Severity by Month",
+    "description": "Bar chart showing monthly distribution of incident severity across a year.",
+    "type": "bar chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incidents_by_weekday.png",
+    "title": "Incidents by Day of Week",
+    "description": "Bar chart comparing incident frequency across weekdays.",
+    "type": "bar chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incidents_near_on_holidays.png",
+    "title": "Incidents: On/Near/Unrelated to Holidays",
+    "description": "Stacked bar chart comparing incidents by temporal relation to holidays.",
+    "type": "stacked bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incidents_on_off_holidays.png",
+    "title": "Incidents: Holiday vs. Non-Holiday",
+    "description": "Bar chart comparing incident counts during holidays vs. non-holidays.",
+    "type": "bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/incidents_over_time_holidays.png",
+    "title": "Incidents Over Time: Holiday vs. Regular",
+    "description": "Line chart showing trends of holiday vs. non-holiday incidents across years.",
+    "type": "line chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/kidnapped_over_time_top_10_regions.png",
+    "title": "Kidnappings Over Time (Top 10 Regions)",
+    "description": "Line chart of cumulative kidnappings in high-risk regions (2000–2020).",
+    "type": "line chart",
+    "category": "Regional Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/means_of_attack_actor_top_regions.png",
+    "title": "Attack Methods by Actor (Top Regions)",
+    "description": "Horizontal bar chart of attack methods used by different actors in top regions.",
+    "type": "horizontal bar chart",
+    "category": "Attack Methods"
+  },
+  {
+    "src": "/images/EDA_imgs/means_of_attack_actor_type.png",
+    "title": "Attack Methods by Actor Type",
+    "description": "Horizontal bar chart showing attack method distribution across actor types.",
+    "type": "horizontal bar chart",
+    "category": "Attack Methods"
+  },
+  {
+    "src": "/images/EDA_imgs/means_of_attack_top_10_regions.png",
+    "title": "Attack Methods by Region (Top 10)",
+    "description": "Horizontal bar chart comparing prevalent attack methods across regions.",
+    "type": "horizontal bar chart",
+    "category": "Regional Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/moving_avg_incidents_over_time.png",
+    "title": "Moving Average of Incidents (2000–2025)",
+    "description": "Line chart of smoothed incident trends using moving averages.",
+    "type": "line chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/report_frequency_actor_type_year.png",
+    "title": "Reporting Frequency by Actor/Year",
+    "description": "Heatmap of incident reporting frequency for actor types (2000–2020).",
+    "type": "heatmap",
+    "category": "Reporting Trends"
+  },
+  {
+    "src": "/images/EDA_imgs/time_to_recovery_top_regions.png",
+    "title": "Time to Recovery (Top 10 Regions)",
+    "description": "Bar chart of time intervals (0–200 days) between incidents in high-risk regions.",
+    "type": "bar chart",
+    "category": "Regional Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_5_countries_monthly_incidents.png",
+    "title": "Monthly Incidents (Top 5 Countries)",
+    "description": "Line chart of monthly incident trends in Afghanistan, Somalia, South Sudan, Sudan, Syria.",
+    "type": "line chart",
+    "category": "Geospatial Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_10_actors_involved.png",
+    "title": "Top 10 Actor Types in Incidents",
+    "description": "Horizontal bar chart ranking actor types by incident involvement.",
+    "type": "horizontal bar chart",
+    "category": "Actor Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_10_countries_actor_type.png",
+    "title": "Actor Types by Country (Top 10)",
+    "description": "Stacked bar chart of actor type distribution across top 10 countries.",
+    "type": "stacked bar chart",
+    "category": "Geospatial Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_10_countries_incident_severity.png",
+    "title": "Incident Severity by Country (Top 10)",
+    "description": "Bar chart ranking countries by severity (killed*3 + wounded*2 + kidnapped).",
+    "type": "bar chart",
+    "category": "Impact Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_10_countries_incidents.png",
+    "title": "Top 10 Countries by Incident Count",
+    "description": "Horizontal bar chart ranking countries (Afghanistan highest) by total incidents.",
+    "type": "horizontal bar chart",
+    "category": "Geospatial Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_countries_holiday_incidents.png",
+    "title": "Holiday Incidents by Country (Top 10)",
+    "description": "Bar chart showing Sudan/South Sudan with most holiday-linked incidents.",
+    "type": "bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_holidays_w_incidents.png",
+    "title": "Top Holidays with Incidents",
+    "description": "Horizontal bar chart ranking holidays (Independence Day, Eid al-Fitr) by incident count.",
+    "type": "horizontal bar chart",
+    "category": "Holiday Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/top_incident_severity_country.png",
+    "title": "Top Countries by Incident Severity",
+    "description": "Bar chart ranking countries by weighted severity metric.",
+    "type": "bar chart",
+    "category": "Impact Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/Top_motives.png",
+    "title": "Top Reported Motives",
+    "description": "Horizontal bar chart showing unknown, political, and economic as top motives.",
+    "type": "horizontal bar chart",
+    "category": "Motivational Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/tot_killed_by_actor_type.png",
+    "title": "Total Killed by Actor Type",
+    "description": "Horizontal bar chart of fatalities attributed to state/non-state actor types.",
+    "type": "horizontal bar chart",
+    "category": "Casualty Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/visual_overview_cleaned_data.png",
+    "title": "Incidents Over Time (2000–2025)",
+    "description": "Line chart of incident frequency trends over 25 years.",
+    "type": "line chart",
+    "category": "Temporal Analysis"
+  },
+  {
+    "src": "/images/EDA_imgs/wounded_over_time_top_10_regions.png",
+    "title": "Cumulative Wounded (Top 10 Regions)",
+    "description": "Line chart tracking wounded individuals in high-risk regions (2000–2020).",
+    "type": "line chart",
+    "category": "Regional Analysis"
+  }
+]

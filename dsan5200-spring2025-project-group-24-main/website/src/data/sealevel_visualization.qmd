@@ -1,0 +1,81 @@
+```{python}
+import pandas as pd
+import altair as alt
+
+# import the data
+bangladesh = pd.read_excel("bangladesh_sea_level.xlsx", sheet_name="Observations")
+maldives = pd.read_excel("maldives_sea_level.xlsx", sheet_name="Observations")
+philippines = pd.read_excel("philippines_sea_level.xlsx", sheet_name="Observations")
+all_countries = pd.read_excel("sealevel_global_explorer_data_global.xlsx", sheet_name="Observations")
+
+# add country column to data
+bangladesh['Country'] = 'Bangladesh'
+maldives['Country'] = 'Maldives'
+philippines['Country'] = 'Philippines'
+all_countries['Country'] = 'Global'
+
+# create a list to hold data from all three countries
+data = []
+
+
+for df in [bangladesh, maldives, philippines, all_countries]:
+    recon_df = df[['Reconstruction Year', 'Reconstruction Obs', 'Country']].copy()
+    recon_df.rename(columns={'Reconstruction Year': 'Year', 'Reconstruction Obs': 'Sea Level (mm)'}, inplace=True)
+    recon_df['Metric'] = 'Reconstruction Obs'
+    data.append(recon_df)
+
+    sat_df = df[['Satellite Altimetry Year', 'Satellite Altimetry', 'Country']].copy()
+    sat_df.rename(columns={'Satellite Altimetry Year': 'Year', 'Satellite Altimetry': 'Sea Level (mm)'}, inplace=True)
+    sat_df['Metric'] = 'Satellite Altimetry'
+    data.append(sat_df)
+
+
+# combine the dfs into a single df
+combined_df = pd.concat(data, ignore_index=True)
+
+# drop years with missing data
+combined_df.dropna(subset=['Sea Level (mm)', 'Year'], inplace=True)
+
+countries = combined_df['Country'].unique()
+metrics = combined_df['Metric'].unique()
+
+# create selection points
+country_select = alt.selection_point(
+    name='Country', 
+    fields=['Country'],
+    bind=alt.binding_radio(options=countries, name='Country: '),
+    value=countries[0]
+)
+
+metric_select = alt.selection_point(
+    name='Metric',
+    fields=['Metric'], 
+    bind=alt.binding_radio(options=metrics, name='Sea Level Metric: '), 
+    value=metrics[0] 
+)
+
+
+base = alt.Chart(combined_df).encode(
+    x=alt.X('Year:Q', axis=alt.Axis(title='Year', format='d')),
+    y=alt.Y('Sea Level (mm):Q', axis=alt.Axis(title='Sea Level Change (mm)')),
+    tooltip=['Country', 'Metric', 'Year', alt.Tooltip('Sea Level (mm)', format='.2f')] 
+)
+
+
+line = base.mark_line(point=True).encode(
+).properties(
+    title='Sea Level Change Over Time In Selected Countries'
+)
+
+chart = line.add_params(
+    country_select,
+    metric_select
+).transform_filter(
+    country_select
+).transform_filter(
+    metric_select
+).interactive()
+
+chart.save("sea_level_plot.html")
+chart.display()
+```

@@ -1,0 +1,66 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import altair as alt\n",
+        "\n",
+        "df = pd.read_excel(\"cmip6-x0.25_timeseries_hi39_timeseries_annual_1950-2014_median_historical_ensemble_all_mean.xlsx\")\n",
+        "\n",
+        "df = df.drop(columns=['code'])\n",
+        "\n",
+        "df = df.rename(columns={'name': 'Country'})\n",
+        "countries = df['Country'].unique()\n",
+        "\n",
+        "df.head()\n",
+        "\n",
+        "df_long = df.melt(\n",
+        "    id_vars=['Country'],\n",
+        "    var_name='Year',\n",
+        "    value_name='Metric'\n",
+        ")\n",
+        "\n",
+        "country_select = alt.selection_point(\n",
+        "    name='Country', \n",
+        "    fields=['Country'],\n",
+        "    bind=alt.binding_radio(options=countries, name='Country: '),\n",
+        "    value=countries[0]\n",
+        ")\n",
+        "\n",
+        "\n",
+        "chart = alt.Chart(df_long).mark_line().encode(\n",
+        "    x=alt.X('Year', axis=alt.Axis(title='Year')),\n",
+        "    y=alt.Y('Metric', axis=alt.Axis(title='Metric')),\n",
+        "    color='Country:N',\n",
+        "    tooltip=['Country', 'Year', 'Metric']\n",
+        ").properties(\n",
+        "    title='Days With Extreme Temperatures'\n",
+        ")\n",
+        "\n",
+        "\n",
+        "chart = chart.add_params(\n",
+        "    country_select\n",
+        ").transform_filter(\n",
+        "    country_select\n",
+        ").interactive()\n",
+        "\n",
+        "chart.save('extreme_temperature_plot.html')\n"
+      ],
+      "id": "927a5565",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "hw3env",
+      "language": "python",
+      "display_name": "Python (hw3env)",
+      "path": "/Users/sophiacastor/Library/Jupyter/kernels/hw3env"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

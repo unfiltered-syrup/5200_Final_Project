@@ -1,0 +1,86 @@
+  .radial-calendar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .radial-calendar-container svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .controls {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controls label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #003f5c;
+    font-size: 0.9rem;
+  }
+  
+  .controls button {
+    padding: 6px 14px;
+    border: 1px solid #003f5c;
+    border-radius: 999px;
+    background-color: white;
+    color: #003f5c;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .controls button:hover {
+    background-color: #e0f0ff;
+  }
+  
+  .controls button.active {
+    background-color: #003f5c;
+    color: white;
+  }
+  
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    background: white;
+    border: 1px solid #cfd8dc;
+    border-left: 4px solid #0077cc;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #263238;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    max-width: 280px;
+    line-height: 1.4;
+    z-index: 1000;
+  }
+
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .motive-checkbox {
+    font-size: 0.85rem;
+    color: #003f5c;
+  }
+  
+  .legend {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: #003f5c;
+  }
+  

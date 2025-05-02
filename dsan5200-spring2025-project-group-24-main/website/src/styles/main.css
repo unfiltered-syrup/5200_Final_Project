@@ -1,0 +1,188 @@
+/* === Custom CSS overrides for the theme === */
+
+/* Root Variables for Colors, Fonts, and Sizing */
+:root {
+  --black: #212121;
+  --font-sans: "GT-Zirkon-Regular", "Neue Haas Unica Pro", "Helvetica", sans-serif;
+  --font-size-reader: 20px;
+  --line-height-reader: 26px;
+
+  --h00: 3.5rem;
+  --h0: 3rem;
+  --h1: 2.5rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: 0.875rem;
+  --h6: 0.75rem;
+
+  --max-content-width: 800px;
+  --container-padding: 20px;
+}
+
+@media (max-width: 40em) {
+  :root {
+    --font-size-reader: 17px;
+    --line-height-reader: 22px;
+  }
+}
+
+@font-face {
+  font-family: 'GT-Zirkon-Regular';
+  src: url('../assets/fonts/GTZirkon-Regular/GTZirkon-Regular.woff2') format('woff2'),
+       url('../assets/fonts/GTZirkon-Regular/GTZirkon-Regular.woff') format('woff'),
+       url('../assets/fonts/GTZirkon-Regular/GTZirkon-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'GT-Zirkon-Regular', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #212121;
+  background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }
+
+/* Paragraphs */
+p {
+  margin-bottom: 1em;
+}
+
+/* Base link styles */
+a {
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: all 0.3s ease;
+  color: #0077cc;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6fa8dc;
+}
+
+/* SVG Responsiveness */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout Padding for Material UI Containers */
+.MuiContainer-root {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Section Styling for Scrollytelling */
+section {
+  margin-bottom: 40px;
+  padding: 60px var(--container-padding);
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-behavior: smooth;
+}
+section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+@media (max-width: 768px) {
+  section {
+    padding-top: 20px;
+  }
+}
+
+/* Dark Mode / Light Mode Switch Styling */
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+/* Error Boundary and Debugging Styles */
+.error-boundary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #d33;
+  font-size: 18px;
+}
+
+/* Selection Styling */
+::selection {
+  background-color: #6fa8dc;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #6fa8dc;
+  color: #fff;
+}
+
+/* Global Link Overrides */
+a, a:visited {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* === Pulse Animation for Selected Incident Dot === */
+.selected-dot {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    r: 6;
+    stroke-width: 2;
+  }
+  50% {
+    r: 9;
+    stroke-width: 3;
+  }
+  100% {
+    r: 6;
+    stroke-width: 2;
+  }
+}
